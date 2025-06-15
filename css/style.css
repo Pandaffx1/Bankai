@@ -1,0 +1,41 @@
+
+:root{
+  color: #ffffff;
+  background: radial-gradient(#1f1b38, #0b0b0b);
+  
+
+}
+
+
+
+
+
+      
+
+h1{
+  font-family: Helvetica;
+
+}
+
+span{
+  font-family: cursive;
+  color: blue;
+}
+  .main-header{
+  color: cyan;
+}
+
+h3{
+  width: 40ch;
+  font-family: cursive;
+  text-wrap: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(50) infinite
+  alternate-reverse
+}
+
+@keyframes typing{
+  from{
+    width: 0ch;
+  }
+}

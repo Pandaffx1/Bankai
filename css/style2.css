@@ -1,0 +1,247 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 1px solid cyan;
+    width: 90%;
+        border: 3px solid cyan;
+    
+    margin: auto;
+
+}
+
+.intruse{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.person-icon{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+}
+
+/*Head(circle)*/
+.person-icon::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Shoulders(semi-oval body) */
+.person-icon::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    width: 20px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%/50%;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: cursive;
+}
+
+.header{
+
+    width: 100%;
+    background: linear-gradient(#e21dd8d7, #8f3a8c);
+    height: 170px;
+    position: relative;
+}
+
+.header .nav{
+    width: 18%;
+    position: absolute;
+   right: 22px;
+   top: 55px;
+}
+
+.nav a{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 10px;
+}
+
+ .nav a :hover{
+    color: #e2e2e2;
+} 
+
+.header .logo{
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+
+.logo span a{
+    color: #ffd700;
+    font-family: tahoma;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.logo h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+.mini{
+    border: 1px solid cyan;
+    width: 20%;
+}
+
+.mini .mini1{
+    width: 100%;
+    border-bottom: 1px solid cyan;
+}
+
+.mini1 li{
+    border-bottom: 1px solid thick cyan;
+}
+
+.mini1 li a{
+    color: purple;
+    font-weight: bolder;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+}
+
+.mini1 li a:hover{
+    background-color: #8f3a8c;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mini .mini2{
+    border: 1px solid cyan;
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.main{
+    width: 79%;
+    border: 1px solid cyan;
+    margin-left: 5px;
+}
+
+.mini, .main{
+    float: left;
+}
+
+.product{
+    border: 1px solid purple;
+    width: 20%;
+    height: 450px;
+    margin: 20px 15px;
+    position: relative;
+    float: left;
+}
+.main img{
+    width: 100%;
+}
+
+.call-to-action{
+    background: linear-gradient(#E21DD8, #8F3A8C);
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.image{
+    transition: transform 0.3s ease;
+}
+.image:hover{
+    transform: scale(0.8);
+}
+
+ 
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #8c52ff;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 300px;
+    cursor: pointer;
+
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #8c52ff;
+    color: white;
+}
+
